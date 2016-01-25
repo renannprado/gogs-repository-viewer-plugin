@@ -36,7 +36,11 @@ public class GogsGitRepositoryBrowser extends FisheyeGitRepositoryBrowser {
 
     @Override
     public URL getFileLink(GitChangeSet.Path path) throws IOException {
-        return new URL(getUrl(), getUrl().getPath() + "src/" + path.getChangeSet().getBranch() + path.getPath());
+        // for some reason sometimes the branch won't be set
+        // set "master" branch if the branch is null
+        final String currentBranch = (path.getChangeSet().getBranch() == null ? "master" : path.getChangeSet().getBranch()) + "/";
+
+        return new URL(getUrl(), getUrl().getPath() + "src/" + currentBranch + path.getPath());
     }
 
     @Override

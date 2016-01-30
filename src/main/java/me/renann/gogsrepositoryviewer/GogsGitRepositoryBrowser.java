@@ -30,7 +30,7 @@ public class GogsGitRepositoryBrowser extends FisheyeGitRepositoryBrowser {
 
     @Override
     public URL getDiffLink(GitChangeSet.Path path) throws IOException {
-        // Does Gogs have DiffLink support already?
+        // TODO will implement later
         return null;
     }
 

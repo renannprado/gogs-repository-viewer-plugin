@@ -17,7 +17,6 @@
 
     <name>Gogs Plugin for Jenkins</name>
     <description>Gogs plugin for jenkins</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
     <licenses>
         <license>
             <name>MIT License</name>

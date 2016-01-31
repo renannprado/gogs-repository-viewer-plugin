@@ -12,7 +12,7 @@
     </parent>
     <groupId>me.renann</groupId>
     <artifactId>gogs-repository-viewer</artifactId>
-    <version>1.0.Alfa</version>
+    <version>1.0.1.Alfa</version>
     <packaging>hpi</packaging>
 
     <name>Gogs Plugin for Jenkins</name>
